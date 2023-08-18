@@ -1,3 +1,3 @@
-Membuat repo github
-Menyetting repo
-Menyambukan repo dengan vs code
+1.Membuat repo github
+2.Menyetting repo
+3.Menyambukan repo dengan vs code
