@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <div style="width: 365px; height: 51px; color: black; font-size: 24px; font-family: Actor; font-weight: 400; word-wrap: break-word">uyeeepedia.blogspot.com</div>
+        <div style="width: 135px; height: 52px; color: black; font-size: 36px; font-family: Acme; font-weight: 400; word-wrap: break-word">Beranda</div>
+        <div style="width: 85px; height: 52px; color: black; font-size: 36px; font-family: Acme; font-weight: 400; word-wrap: break-word">Profil</div>
+        <div style="width: 217px; height: 52px; color: black; font-size: 36px; font-family: Acme; font-weight: 400; word-wrap: break-word">Rekomendasi</div>
+
+        <!--CSS only-->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    </head>
+    <body>
+        <div style="width: 231px; height: 54px; color: black; font-size: 40px; font-family: Acme; font-weight: 400; word-wrap: break-word">UYEEE PEDIA </div>
+        <div style="width: 537px; color: black; font-size: 24px; font-family: Actor; font-weight: 400; word-wrap: break-word">MEREKOMENDASI KAN BERBAGAI MACAM FILM DAN DORAMA JEPANG,<br/>JADI WEB INI SANGAT COCOK UNTUK KAMU SI PENYUKA JEJEPANGAN</div>
+        <img style="width: 644px; height: 773px" src="https://via.placeholder.com/644x773" />
+    </body>
