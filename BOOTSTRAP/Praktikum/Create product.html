@@ -4,27 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Product</title>
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <header>
-        <h1>Create Product</h1>
-        <h2>Detail Product</h2>
-    </header>
+    <div class="navbar">
+    <div class="header-text">Simple Header</div>
+    <a href="#home">Home</a>
+    <a href="features">Features</a>
+    <a href="pricing">Pricing</a>
+    <a href="faqs">FAQs</a>
+    <a href="#about">About</a>
+  </div>
+  <br>
+  <br>
     <main>
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+        <div class="content" id="content-section">
+        <div class="content-text">
+            <h1>Create Product</h1>
+            <p>Below is an example form built entirely with Bootstrap's from controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+            <h2>Detail Product</h2>
+        </div>
+        </div>
+        <div class="container">
         <form action="processProduct.php" method="POST" onsubmit="return validateForm()">
-            <label for="productName">Product Name:</label>
-            <br>
+            <label for="productName">Product Name</label>
             <input type="text" id="productName" name="productName" required>
             </br>
-            <label for="productCategory">Product Category:</label>
-            <br>
+            <label for="productCategory">Product Category</label>
             <select id="productCategory" name="productCategory">
-                <option value="elektronik">Elektronik</option>
-                <option value="fashion">Fashion</option>
-                <option value="kendaraan">Kendaraan</option>
+                <option value="choose">Choose</option>
             </select>
+            <br>
+            <br>
+            <label>Image of Product</label>
+            <br>
+            <input type="file" id="fileInput" style="display: none;">
+            <button id="chooseFileButton">Choose File</button>
+            <br>
+            <br>
+            <label for="imageofproduct">No file chosen</label>
             </br>
-            </br>
+            <br>
             <label for="productFreshness">Product Freshness:</label>
             <ol>
                 <ul>
@@ -33,12 +56,6 @@
                     <li>Refurbished</li>
                 </ul>
             </ol>
-            <br>
-            <label for="imageofproduct">Image of Product</label>
-            <input type="file" id="fileInput" style="display: none;">
-            <button id="chooseFileButton">Choose File</button>
-            <label for="imageofproduct">No file chosen</label>
-            </br>
             <br>
             <label for="additionalDescription">Additional Description</label>
             <br>
@@ -50,18 +67,13 @@
             </br>
             <br>
             <br>
-            <button type="submit">Submit</button>
         </form>
-        <p><a href="landingPage.html">Back to Landing Page</a></p>
-
-            <button type="submit">Submit</button>  
-        </form>  
-            <p><a href="landingpage.html">Menuju ke Create Product</a></p>
     </main>
     <footer>
+        <button id="submit">Submit</button>
         <p>&copy; 2023 uyeeepedia</p>
     </footer>
-
+    </div>
     <script>
         function validateForm() {
             let productName = document.getElementById("productName").value;

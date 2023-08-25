@@ -1,0 +1,116 @@
+.navbar {
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  .navbar .header-text {
+    float: left;
+    padding: 14px 16px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #20B2AA;
+    text-align: left;
+    padding: 15px 16px;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    background-color: #00BFFF;
+    color: #00008B;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .logo {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+  }
+
+  .logo img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+    /* Content styles */
+    .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .content-text {
+    flex: 1;
+    padding-right: 20px;
+    align-items: left;
+  }
+
+  h1 {
+    text-align: center;
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+  }
+
+  .content-text h2 {
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Gaya untuk konten form */
+        form {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        form label, form input, form select, form textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Gaya untuk footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-top: 1px solid #ccc;
+        }
+
+        footer button#submit {
+            margin-top: 0;
+            padding: 20px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+  
