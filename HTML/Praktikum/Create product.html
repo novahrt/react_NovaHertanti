@@ -11,7 +11,7 @@
         <h2>Detail Product</h2>
     </header>
     <main>
-        <form action="processProduct.php" method="POST">
+        <form action="processProduct.php" method="POST" onsubmit="return validateForm()">
             <label for="productName">Product Name:</label>
             <br>
             <input type="text" id="productName" name="productName" required>
@@ -25,14 +25,14 @@
             </select>
             </br>
             </br>
-            <label for="productFreshness">Produk Freshness:</label>
-               <ol>
+            <label for="productFreshness">Product Freshness:</label>
+            <ol>
                 <ul>
                     <li>Brand New</li>
-                    <li>Second Hank</li>
-                    <li>Refubished</li>
+                    <li>Second Hand</li>
+                    <li>Refurbished</li>
                 </ul>
-               </ol>
+            </ol>
             <br>
             <label for="imageofproduct">Image of Product</label>
             <input type="file" id="fileInput" style="display: none;">
@@ -44,18 +44,37 @@
             <br>
             <textarea id="additionalDescription" name="additionalDescription" required></textarea>
             <br>
-            <label for="productprice">Product Price</label>
+            <label for="productPrice">Product Price:</label>
             <br>
-            <input type="text" id="productprice" name="productprice" placeholder="$ 100">
+            <input type="text" id="productPrice" name="productPrice" required>
+            </br>
             <br>
             <br>
-            <button type="submit">Submit</button>  
-        </form>  
+            <button type="submit">Submit</button>
+        </form>
+        <p><a href="landingPage.html">Back to Landing Page</a></p>
     </main>
     <footer>
         <p>&copy; 2023 uyeeepedia</p>
     </footer>
+
+    <script>
+        function validateForm() {
+            let productName = document.getElementById("productName").value;
+            let productPrice = document.getElementById("productPrice").value;
+
+            if (productName.length < 6 || productName.length > 50) {
+                alert("Product Name must be between 6 and 50 characters.");
+                return false;
+            }
+
+            if (!/^\d+$/.test(productPrice)) {
+                alert("Product Price must be a number.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
 </body>
 </html>
-
-
