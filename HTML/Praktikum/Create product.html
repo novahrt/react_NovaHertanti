@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+</head>
+<body>
+    <header>
+        <h1>Create Product</h1>
+        <h2>Detail Product</h2>
+    </header>
+    <main>
+        <form action="processProduct.php" method="POST">
+            <label for="productName">Product Name:</label>
+            <br>
+            <input type="text" id="productName" name="productName" required>
+            </br>
+            <label for="productCategory">Product Category:</label>
+            <br>
+            <select id="productCategory" name="productCategory">
+                <option value="elektronik">Elektronik</option>
+                <option value="fashion">Fashion</option>
+                <option value="kendaraan">Kendaraan</option>
+            </select>
+            </br>
+            </br>
+            <label for="productFreshness">Produk Freshness:</label>
+               <ol>
+                <ul>
+                    <li>Brand New</li>
+                    <li>Second Hank</li>
+                    <li>Refubished</li>
+                </ul>
+               </ol>
+            <br>
+            <label for="imageofproduct">Image of Product</label>
+            <input type="file" id="fileInput" style="display: none;">
+            <button id="chooseFileButton">Choose File</button>
+            <label for="imageofproduct">No file chosen</label>
+            </br>
+            <br>
+            <label for="additionalDescription">Additional Description</label>
+            <br>
+            <textarea id="additionalDescription" name="additionalDescription" required></textarea>
+            <br>
+            <label for="productprice">Product Price</label>
+            <br>
+            <input type="text" id="productprice" name="productprice" placeholder="$ 100">
+            <br>
+            <br>
+            <button type="submit">Submit</button>  
+        </form>  
+    </main>
+    <footer>
+        <p>&copy; 2023 uyeeepedia</p>
+    </footer>
+</body>
+</html>
+
+
