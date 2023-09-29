@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+</head>
+<body>
+    <header>
+        <h1>Create Product</h1>
+        <h2>Detail Product</h2>
+    </header>
+    <main>
+        <form action="processProduct.php" method="POST" onsubmit="return validateForm()">
+            <label for="productName">Product Name:</label>
+            <br>
+            <input type="text" id="productName" name="productName" required>
+            </br>
+            <label for="productCategory">Product Category:</label>
+            <br>
+            <select id="productCategory" name="productCategory">
+                <option value="elektronik">Elektronik</option>
+                <option value="fashion">Fashion</option>
+                <option value="kendaraan">Kendaraan</option>
+            </select>
+            </br>
+            </br>
+            <label for="productFreshness">Product Freshness:</label>
+            <ol>
+                <ul>
+                    <li>Brand New</li>
+                    <li>Second Hand</li>
+                    <li>Refurbished</li>
+                </ul>
+            </ol>
+            <br>
+            <label for="imageofproduct">Image of Product</label>
+            <input type="file" id="fileInput" style="display: none;">
+            <button id="chooseFileButton">Choose File</button>
+            <label for="imageofproduct">No file chosen</label>
+            </br>
+            <br>
+            <label for="additionalDescription">Additional Description</label>
+            <br>
+            <textarea id="additionalDescription" name="additionalDescription" required></textarea>
+            <br>
+            <label for="productPrice">Product Price:</label>
+            <br>
+            <input type="text" id="productPrice" name="productPrice" required>
+            </br>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <p><a href="landingPage.html">Back to Landing Page</a></p>
+
+            <button type="submit">Submit</button>  
+        </form>  
+            <p><a href="landingpage.html">Menuju ke Create Product</a></p>
+    </main>
+    <footer>
+        <p>&copy; 2023 uyeeepedia</p>
+    </footer>
+
+    <script>
+        function validateForm() {
+            let productName = document.getElementById("productName").value;
+            let productPrice = document.getElementById("productPrice").value;
+
+            if (productName.length < 6 || productName.length > 50) {
+                alert("Product Name must be between 6 and 50 characters.");
+                return false;
+            }
+
+            if (!/^\d+$/.test(productPrice)) {
+                alert("Product Price must be a number.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
+
+

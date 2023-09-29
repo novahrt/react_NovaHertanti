@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Products</title>
+    <link rel="stylesheet" type="text/css" href="ds.css">
+        
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <!-- Tombol Insert -->
+        <button id="insertBtn">Insert</button>
+        <button>Submit</button>
+    </div>
+    <h2>List of Products</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Product Name</th>
+                <th>Product Category</th>
+                <th>Image of Product</th>
+                <th>Product Freshness</th>
+                <th>Additional Description</th>
+                <th>Product Price</th>
+            </tr>
+        </thead>
+        <tbody id="productTableBody">
+            
+            <!-- Isi tabel dengan data produk -->
+            <tr>
+                <td>1,001</td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>Brand New</td>
+                <td>adipiscing</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1,002</td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>Second Hand</td>
+                <td>adipiscing</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>1,003</td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>Brand New</td>
+                <td>adipiscing</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>1,004</td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>Refurbished</td>
+                <td>adipiscing</td>
+                <td>9</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <!-- Tombol Deletion -->
+                    <button id="deleteBtn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="7">
+                    <!-- Kotak Pencarian dan Tombol Search -->
+                    <div class="search-container">
+                        <label for="search">Search by Product Name: </label>
+                        <input type="text" id="search" name="search">
+                        <button id="searchBtn">Search</button>
+                    </div>
+                </td>
+            </tr>
+        </tfoot>
+    </table>   
+    <script src="ds.js"></script>
+</body>
+</html>
+
