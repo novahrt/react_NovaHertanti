@@ -1,0 +1,3 @@
+Tentang bagaimana merouting halaman lain agar ketika di klik akan menuju kehalaman tersebut.
+Contohnya dilembar kerja saya menunjukan bahwa create product menjadi navbar yang saat diklik akan menuju ke createproduct html.
+Dalam soal prioritas point 2 seharusnya disoal ketika mengklik data akan pindah halaman namun karena create product yang saya masukkan bukan tabel maka ketika diklik submit maka akan kembali ke halaman landing page.
